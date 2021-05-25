@@ -1,0 +1,34 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	float n1,n2;
+	char op;
+	float result;
+	clrscr();
+
+	printf("-----CALCULATOR---\n");
+	printf("\n Enter 1St Number:");
+	scanf("%f",&n1);
+	printf("\n Enter the operation:");
+	scanf("%c",&op);
+	printf("\n Enter 2th Number:");
+	scanf("%f",&n2);
+	switch (op)
+	{
+	case '+':result= n1+n2;
+		printf("\n Addition=%f,result");
+		break;
+	case '_':result= n1-n2;
+		printf("\n Substraction=%f,result");
+		break;
+
+       case '*':result= n1*n2;
+		printf("\n Multipl.=%f,result");
+		break;
+       case '/':result= n1/n2;
+		printf("\n Division=%f,result");
+		break;
+      }
+      getch();
+      }
